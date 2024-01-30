@@ -1,0 +1,12 @@
+a#main,a#main:hover,a#main:visited{
+    position: absolute;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+a#main,a#main:active,a#main:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}

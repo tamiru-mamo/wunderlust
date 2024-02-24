@@ -155,14 +155,14 @@ header h1{
   padding-left:4rem;
   padding-right:4rem;
   order:2;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
  header p{
   grid-column:span 2;
   padding-left:4rem;
   padding-right:4rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   order:3;
 }
 #menu-toggle{
@@ -232,13 +232,22 @@ li a {
 #intro{
     background-color: var(--White);
 }
+#intro h2{
+  font-size: 3rem;
+}
 #intro h2,#intro p{
     display: flex;
     flex-flow: column wrap;
     padding-left:4rem;
     padding-right:4rem;
-    max-width: 100%; 
-   
+    max-width: 100%;  
+}
+#intro p{
+  font-size: 1.75rem;
+  padding-bottom: 1.6rem;
+  font-weight: 300;  
+  
+ 
 }
 /*---- image Style----*/
 #img-grid{
@@ -264,8 +273,9 @@ li a {
 #plan h3 {
     display: block;
     text-align: center;
-   padding-top: 1rem; 
+    padding-top: 1rem; 
     font-weight: bolder;
+    font-size: 2.75rem;
 }
 #plan div {
   display: block;
@@ -296,17 +306,29 @@ li a {
  /*-----testimonials style--- */
  #testimonials{
     background-color: var(--White);
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
+    max-width: 100%;
     
  }
+ #testimonials div{
+  display: grid;
+  padding: 0.6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  max-width: 100%;
+  
+}
  #testimonials h3{
     display: block;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 1rem;
+    margin-left: 2rem;
     font-weight: bolder;
+    padding-left: 2rem;  
+    padding-top: 1rem;    
+    font-size: 2.75rem;
     
  }
  #testimonials div section{
@@ -322,6 +344,8 @@ li a {
  #testimonials div section img{
     display: block;
     align-items: center;
+    object-fit: contain;
+    max-width: 100%;
     
  }
  #testimonials div section h4, #testimonials div section p, #testimonials div section q{
@@ -335,6 +359,7 @@ li a {
   font-weight:bolder;
    text-transform: uppercase;
    padding-top: 10px;
+   font-size: 2rem;
     
  }
 
@@ -342,48 +367,60 @@ li a {
  #about {
     background-color: var(--Blue);
     display: block;
+    max-width: 100%;
    
  }
  #about h3{
-    background-color: var(--Blue);
     display: block;
     padding: 10px;
+    font-size: 2.75rem;
+    text-align: center;
    
  }
  #about div{
-   
-    display: grid;
-    grid-template-columns: repeat(2,auto) ;
-    gap: 0.6rem;
-    width: 100%;
-    height: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-   
- }
- #about div img{
-    width: 45%;
-    /* height:auto; */
-    object-fit:cover;
-    padding-top: 0.6rem;
-    text-transform: uppercase;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: space-evenly;
+  grid-auto-rows: minmax(100px, auto);
+  padding:1.6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  max-width: 100%;
+ 
+ 
+}
+#about div h4{
+ display:block;
+ text-align:left;
+ padding-top: 1rem;
+ text-transform: uppercase;
+ font-weight: bold;
+
+ 
+}
+ #about div section p{
+  padding-right: 1rem;
+  padding-bottom: 1rem;
     
- }
- #about div section h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    
- }
+ } 
  #contact{
-  background-color: var(--White);  
+  /* background-color: var(--White);   */
+  background-color: #F6D64A;
   display: block;
+  box-sizing: border-box;
+  max-width: 100%;
  }
+ 
  #contact h3 {    
     display: block;
-    align-items: center;
-    padding: 0.6rem;
-    
+    font-size: 2.75rem;
+    padding: 1.6rem;    
    }
+   #contact .form-required{
+    font-size:2rem ;
+    font-family: var(--fonts1);
+    font-weight: 300;
+  }
    #names{    
     display: flex;
     flex-direction: column;

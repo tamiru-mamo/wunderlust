@@ -404,8 +404,7 @@ li a {
     
  } 
  #contact{
-  /* background-color: var(--White);   */
-  background-color: #F6D64A;
+  background-color: var(--White);  
   display: block;
   box-sizing: border-box;
   max-width: 100%;
@@ -421,10 +420,16 @@ li a {
     font-family: var(--fonts1);
     font-weight: 300;
   }
+   form{
+    display: grid;
+    box-sizing: border-box;
+    
+   }
    #names{    
     display: flex;
     flex-direction: column;
-    padding: 0.6rem; 
+    padding: 1.6rem; 
+   
   }
   #names label{    
     text-transform: uppercase;
@@ -432,75 +437,119 @@ li a {
   }
    #names input{    
     display: block;
-    padding: 0.6rem; 
-    margin-bottom: 0.6rem;
-    border:2px solid var(--Purple);   
+    padding: 1.6rem; 
+    margin-bottom: 1.6rem;
+    border:4px solid var(--Purple);  
+    font-size: 1.75rem; 
+    max-width: 100%;
 
    }
    #nums{
-    display: flex;
-    flex-direction: column;
-    padding: 0.6rem; 
+    display: grid;
+    padding: 1.6rem; 
+    max-width: 100%;
+    gap:.6rem;
    }
    legend{
     text-transform: uppercase;
     font-weight: bold;
+    padding: 1.6rem;
    }
    #nums fieldset{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     padding-bottom: 1.6rem;
+    overflow: hidden;
+    max-width: 100%;
+    gap:.6rem;
+    
+   }
+   #nums fieldset legend{ 
+    display: block;
+    text-align: left;
+    padding-left: 0%;
+    
     
    }
  input[type=radio] {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     margin-left: 0%;
     accent-color:var(--Purple); 
-    box-shadow:  0 0 1px var(--Purple);    
-  
+    box-shadow:  0 0 2px var(--Purple);  
+    float: left;    
+}
+
+.radio-label{
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-left: 1.6rem;
+  text-transform: initial;
+  font-weight: 300;
 }
 .required{
   color:var(--Purple) !important;
 }
 #nums label{    
-  display: block;
-  flex-direction: column;
+  display: block;  
   text-transform: uppercase;
   font-weight: bold;
+  text-align: left;
+  padding-left: 0%;
+ 
   
 }
+
  #nums input{    
-  display: block;
-  padding: 0.6rem; 
+  display: grid;
+  padding:1.6rem; 
   margin-bottom: 0.6rem;
-  border:2px solid var(--Purple);  
+  border:4px solid var(--Purple);    
+  font-size: 1.75rem; 
+  gap:.6rem;
+
 } 
 #selects{
-  display: block;
+  display: grid;
+  max-width: 100%;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  gap:.6rem;
+  
 }
 #selects label{
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 0.6rem; 
+  /* padding-left: 1.6rem;  */
 }
  #destination, #travelTime {
-  display: block;
-  padding: .6rem 9.6rem .6rem  .6rem ; 
-  margin-bottom: 0.6rem;
-  margin-left: 0.6rem;
-  border:2px solid var(--Purple);
+  display: grid;
+  padding: 1.6rem ;
+  margin-bottom: 0.6rem; 
+  border:4px solid var(--Purple);
+  font-size: 1.75rem; 
+  font-weight: 300;
+  width:100%;
+  gap:.6rem;
 }
+
 #mySubmit{
-  display: block;
-  padding: .6rem 7.35rem .6rem  7.35rem ;  
-  /* margin-bottom: 0.6rem; */
-  margin-left: 0.6rem;
-  background-color:  var(--Purple);
-  color:var(--White) ;
+  display: grid;
+  padding: 1.6rem;
+  margin-left: 0;
+  background-color:  var(--Purple);  
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
+  max-width: 100%;
+  font-size: 1.75rem; 
+  color: var(--White);
+  font-family: var(--fonts1);
+  padding-bottom: 1.6rem;
+  gap:.6rem;
   
 }
 footer{
@@ -509,16 +558,19 @@ footer{
   background-color:  var(--light-gray);
   font-family: var(--fonts1);
   margin-top: 0%;
-  /* width: 100%; */
+  margin-bottom:.6rem;
+  max-width: 100%; 
   height: auto;
-  padding: .6rem;
-  font-size:small ;
+  padding: 1.6rem;
+  font-size: 1.5rem; 
   
 }
 footer a, footer p{
   text-decoration: none;
   text-align: center;
   padding: .6rem;
+  font-size: 1.5rem; 
+  font-weight: 400;
 }
 
 @media screen and (min-width: 650px){

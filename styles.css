@@ -152,13 +152,17 @@ q {
 }
 header h1{
   grid-column:span 2;
-  padding-left: 20px;
+  padding-left:4rem;
+  padding-right:4rem;
   order:2;
+  font-size: 4rem;
 }
 
  header p{
   grid-column:span 2;
-  padding-left: 20px;
+  padding-left:4rem;
+  padding-right:4rem;
+  font-size: 1.5rem;
   order:3;
 }
 #menu-toggle{
@@ -231,18 +235,20 @@ li a {
 #intro h2,#intro p{
     display: flex;
     flex-flow: column wrap;
-    padding:0.6rem;
+    padding-left:4rem;
+    padding-right:4rem;
     max-width: 100%; 
    
 }
+/*---- image Style----*/
 #img-grid{
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap:0.6rem;
-    width: 100%;
-    max-width: 385px;
-    height: auto;  
+    grid-template-rows: repeat(3, 1fr);
+    gap:0.6rem; 
+    max-width: 100%;
+    object-fit: cover;
+
 }
 
 
@@ -250,29 +256,38 @@ li a {
 
 #plan{
     background-color: var(--Yellow);
-    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    /* padding: 10px; */
 }
 
 #plan h3 {
     display: block;
     text-align: center;
-    padding: 10px;
+   padding-top: 1rem; 
     font-weight: bolder;
 }
+#plan div {
+  display: block;
+  padding: 0.6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 
+}
 #plan div section{
 
     background-color: var(--Teal);
-    border: 2px solid white;
-    margin: 10px;
-    padding: 10px;
+    border: 3px solid white;
+    border-radius: 1rem;
+    margin:  1rem;
+    padding: 0.6rem;
    
 }
 #plan div section h4{
 
    display: block;
    text-transform: uppercase;
-   padding: 10px;
+   padding: 0.6rem;
    text-align: center;
    font-weight:bolder;
 }

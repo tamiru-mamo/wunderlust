@@ -68,23 +68,16 @@ table {
     --Black:#000000;
   
   }
-    /* ----- Fonts----- */
-    h1, h2, h3{
-        font-family: var(--fonts);
-        font-weight: 400;
-    }
-    h4{
-        font-weight: 400;
-    }
-    h4, p, q, small, nav, button, form{
-        font-family: var(--fonts1);
-    }
- 
+   
   /* ----- BODY STYLES ----- */
-  html{
-    width:320px ;
-    background-color: var(--dark-Gray);
+    
+    html{
+      box-sizing: border-box;
+      line-height: 1.35;
+      width:320px ;
+     background-color: var(--dark-Gray);
   }
+
 body {
     padding: 1rem 0.5rem;
     font-size: 1rem;
@@ -95,6 +88,18 @@ body {
 
    
 }
+ /* ----- Fonts----- */
+ h1, h2, h3{
+  font-family: var(--fonts);
+  font-weight: 400;
+}
+h4{
+  font-weight: 400;
+}
+h4, p, q, small, nav, button, form{
+  font-family: var(--fonts1);
+}
+
 img {
     max-width: 100%;
 }
@@ -431,4 +436,7 @@ footer a, footer p{
   text-decoration: none;
   text-align: center;
   padding: .6rem;
+}
+@media screen {
+  
 }

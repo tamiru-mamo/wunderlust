@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+    TAMIRU MAMO
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+:root{
+    font-size: 16px;
+    --fonts: Molle , sans-serif;
+    --fonts1: Montserrat, sans-serif;
+    --Yellow: #F6D64A;
+    --Teal:	#55BCD5;
+    --Purple:	#9B26B0;
+    --Blue:	#499BD2;
+    --dark-Gray:#222222;
+    --light-gray:#EAEAEA;
+    --White:#FFFFFF;
+    --Black:#000000;
+  
+  }
+    /* ----- Fonts----- */
+    h1, h2, h3{
+        font-family: var(--fonts);
+        font-weight: 400;
+    }
+    h4{
+        font-weight: 400;
+    }
+    h4, p, q, small, nav, button, form{
+        font-family: var(--fonts1);
+    }
+ 
+  /* ----- BODY STYLES ----- */
+  html{
+    width:320px ;
+    background-color: var(--dark-Gray);
+  }
+body {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    max-width: 20rem;
+    margin: 0 auto;
+    min-height: 100vh;
+
+   
+}
+img {
+    max-width: 100%;
+}
+/* ----- SKIP LINK STYLES ----- */
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+   
+  #skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  /* ----- HEADER STYLES ----- */
+
+  header{
+    background-color: var(--White);   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0px;
+  
+    
+  }
+  /*---logo ---*/
+  #logo{
+    display: block;
+    width: 40.75%;
+     
+  }
+
+  header h1,  header p{
+  
+    display: flex;
+    flex-flow: column wrap;
+    padding:0.6rem;
+    width: 100%; 
+   
+    
+  }
+#intro{
+    background-color: var(--White);
+}
+#intro h2,#intro p{
+    display: flex;
+    flex-flow: column wrap;
+    padding:0.6rem;
+    width: 100%; 
+   
+}
+#img-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap:0.6rem;
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+
+    
+}
+
+
+/*---- Plan Your Trip Style ----*/
+
+#plan{
+    background-color: var(--Yellow);
+    padding: 10px;
+}
+
+#plan h3 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+#plan div section{
+
+    background-color: var(--Teal);
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+   
+}
+#plan div section h4{
+
+   display: block;
+   text-transform: uppercase;
+   padding: 10px;
+   text-align: center;
+   font-weight:bolder;
+}
+  /*---- Main Navigation heading Style ----*/
+#menu-toggle h2{
+    
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;        
+}
+
+#menu-toggle h2:focus{
+position: static;
+width: auto;
+height: auto;
+}
+
+  #menu-toggle input[type="checkbox"],
+  #menu-toggle ul{
+    display: none;
+}
+
+#menu-toggle {
+    /* width: 20%; */
+  
+    padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+    margin: 0.6rem;
+    background-color: var( --Yellow);
+    position:absolute;
+    top:0px;
+    left: 190px;
+
+}
+ 
+
+  #menu-toggle input { 
+    order: 2; }
+ 
+  menu-toggle label{
+    display: flex;
+    position: absolute;
+    top: 0px;
+
+  }
+
+ /*-----testimonials style--- */
+ #testimonials{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+ }
+ #testimonials h3{
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bolder;
+    
+ }
+ #testimonials div section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    
+ }
+ #testimonials div section img{
+    display: block;
+    align-items: center;
+    
+ }
+ #testimonials div section h4, #testimonials div section p, #testimonials div section q{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+ }
+ #testimonials div section h4{
+  font-weight:bolder;
+   text-transform: uppercase;
+   padding-top: 10px;
+    
+ }
+
+ /*--about Style-- */
+ #about {
+    background-color: var(--Blue);
+    display: block;
+   
+ }
+ #about h3{
+    background-color: var(--Blue);
+    display: block;
+    padding: 10px;
+   
+ }
+ #about div{
+   
+    display: grid;
+    grid-template-columns: repeat(2,auto) ;
+    gap: 0.6rem;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+   
+ }
+ #about div img{
+    width: 45%;
+    /* height:auto; */
+    object-fit:cover;
+    padding-top: 0.6rem;
+    text-transform: uppercase;
+    
+ }
+ #about div section h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+ }
+ #contact{
+  background-color: var(--White);  
+  display: block;
+ }
+ #contact h3 {    
+    display: block;
+    align-items: center;
+    padding: 0.6rem;
+    
+   }
+   #names{    
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem; 
+  }
+  #names label{    
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+   #names input{    
+    display: block;
+    padding: 0.6rem; 
+    margin-bottom: 0.6rem;
+    border:2px solid var(--Purple);   
+
+   }
+   #nums{
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem; 
+   }
+   legend{
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+   #nums fieldset{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 1.6rem;
+    
+   }
+ input[type=radio] {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0%;
+    accent-color:var(--Purple); 
+    box-shadow: 0 0 0 1px var(--Purple);    
+  
+}
+.required{
+  color:var(--Purple) !important;
+}
+#nums label{    
+  display: block;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+ #nums input{    
+  display: block;
+  padding: 0.6rem; 
+  margin-bottom: 0.6rem;
+  border:2px solid var(--Purple);  
+} 
+#selects{
+  display: block;
+}
+#selects label{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 0.6rem; 
+}
+ #destination, #travelTime {
+  display: block;
+  padding: .6rem 9.6rem .6rem  .6rem ; 
+  margin-bottom: 0.6rem;
+  margin-left: 0.6rem;
+  border:2px solid var(--Purple);
+}
+#mySubmit{
+  display: block;
+  padding: .6rem 7.35rem .6rem  7.35rem ;  
+  /* margin-bottom: 0.6rem; */
+  margin-left: 0.6rem;
+  background-color:  var(--Purple);
+  color:var(--White) ;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+footer{
+  display:flex;
+  flex-direction: column;
+  background-color:  var(--light-gray);
+  font-family: var(--fonts1);
+  margin-top: 0%;
+  /* width: 100%; */
+  height: auto;
+  padding: .6rem;
+  font-size:small ;
+  
+}
+footer a, footer p{
+  text-decoration: none;
+  text-align: center;
+  padding: .6rem;
+}

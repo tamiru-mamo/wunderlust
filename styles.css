@@ -95,14 +95,14 @@ table {
 }
   /* ----- BODY STYLES ----- */
     
-    html{
+ html{
       box-sizing: border-box;
       line-height: 1.35;
   }
 
 body {
     padding: 1rem 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin: 0 auto;
     min-height: 100vh;
@@ -124,9 +124,9 @@ q {
   quotes: auto;
   
 }
-img {
+/* img {
     max-width: 100%;
-}
+} */
 /* ----- SKIP LINK STYLES ----- */
 #skip{
     position: absolute;
@@ -223,34 +223,8 @@ li a {
   width: 100%;
   padding: 11px 0;
 }
-  /* header{
-    background-color: var(--White);   
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    top: 0px;
-  
-    
-  } */
-  /*---logo ---*/
-  #logo{
-    display: block;
-    width: 40.75%;
-     
-  }
+/*---- main-content Style----*/
 
-  header h1,  header p{
-  
-    display: flex;
-    flex-flow: column wrap;
-    padding:0.6rem;
-    width: 100%; 
-   
-    
-  }
 #intro{
     background-color: var(--White);
 }
@@ -258,7 +232,7 @@ li a {
     display: flex;
     flex-flow: column wrap;
     padding:0.6rem;
-    width: 100%; 
+    max-width: 100%; 
    
 }
 #img-grid{
@@ -268,9 +242,7 @@ li a {
     gap:0.6rem;
     width: 100%;
     max-width: 385px;
-    height: auto;
-
-    
+    height: auto;  
 }
 
 
@@ -304,36 +276,7 @@ li a {
    text-align: center;
    font-weight:bolder;
 }
-  /*---- Main Navigation heading Style ----*/
-/* #menu-toggle h2{
-    
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;        
-}
 
-#menu-toggle h2:focus{
-position: static;
-width: auto;
-height: auto;
-}
-
-
-
- 
-
-  #menu-toggle input { 
-    order: 2; }
- 
-  menu-toggle label{
-    display: flex;
-    position: absolute;
-    top: 0px;
-
-  }
 
  /*-----testimonials style--- */
  #testimonials{
@@ -462,7 +405,7 @@ height: auto;
     height: 4rem;
     margin-left: 0%;
     accent-color:var(--Purple); 
-    box-shadow: 0 0 0 1px var(--Purple);    
+    box-shadow:  0 0 1px var(--Purple);    
   
 }
 .required{

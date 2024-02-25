@@ -686,9 +686,11 @@ li:nth-child(1) {
 }
 #mySubmit{
   display: grid;  
-  max-width: 40%;
+  max-width: 60%;
   margin-right: 0%; 
-  margin-left: 600px;
+  margin-left: 400px;
+  padding-left: 3rem;
+  padding-right: 3rem;
   
 }
 footer{

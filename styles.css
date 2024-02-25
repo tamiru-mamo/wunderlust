@@ -579,14 +579,15 @@ footer a, footer p{
 }
 
 @media screen and (min-width: 650px){
-  /* header{
-    background: linear-gradient(var(--sea-blue), var(--white));
+  header{
+   
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-bottom: 2rem;   
-    border:2px solid red;
+    padding-bottom: 2rem;  
+    position: absolute; 
    
-} */
+   
+}
 #menu-toggle{
   background: linear-gradient(var(--sea-blue), var(--white));
   display: grid;
@@ -599,6 +600,9 @@ header h1{
   padding-right:4rem;
   order:0;
   font-size: 4.5rem;
+  position: relative;
+  top: -90px;
+  left: 400px;
  
 }
 
@@ -608,6 +612,9 @@ header h1{
   padding-right:4rem;
   font-size: 2rem;
   order:0;
+  position: relative;
+  top: -90px;
+  left: 300px;
 }
 
 #menu-toggle label{

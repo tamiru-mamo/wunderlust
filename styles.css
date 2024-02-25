@@ -651,6 +651,24 @@ li:nth-child(1) {
   object-fit: cover;
 
 }
+#plan h3{
+  display: block;
+  text-align: left;
+  padding-left: 6rem;
+}
+#plan div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#testimonials div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
+}
+#about div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1.6rem
 
+}
 }

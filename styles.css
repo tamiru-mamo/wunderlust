@@ -583,6 +583,7 @@ footer a, footer p{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-bottom: 2rem;   
+    max-width: 100%;
 }
 #menu-toggle{
   background: linear-gradient(var(--sea-blue), var(--white));
@@ -606,19 +607,28 @@ header h1{
 #menu-toggle label{
   display: none;;
 }
-#menu-toggle{
+/* #menu-toggle{
   display: grid;
   grid-template-columns:1fr 1fr 1fr ;
-}
+} */
 #menu-toggle ul{
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
 } 
 
+li  {
+  display: block;
+  text-align: center;
+  padding: 0.6rem;
+  background-color: var(--White);
+}
+li:nth-child(1) {
+  background-color: var(--Yellow);
+}
 #img-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  /* grid-template-rows: 1fr 1fr ; */
-  /* max-width: 100%; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr ; */
+  max-width: 100%;
   object-fit: cover;
 
 }

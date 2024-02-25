@@ -66,6 +66,7 @@ table {
     --light-gray:#EAEAEA;
     --White:#FFFFFF;
     --Black:#000000;
+    --sea-blue:#00c5ff;
   
   }
    
@@ -145,7 +146,7 @@ q {
 
   /* ----- HEADER STYLES ----- */
   header{
-    background: linear-gradient(var(--sea-blue), var(--white));
+    background: linear-gradient(var(--sea-blue),var(--White));
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-bottom: 2rem;

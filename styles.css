@@ -614,5 +614,14 @@ header h1{
   display: inline-block;
 } 
 
+#img-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  /* grid-template-rows: 1fr 1fr ; */
+  /* max-width: 100%; */
+  object-fit: cover;
+
+}
+
 
 }

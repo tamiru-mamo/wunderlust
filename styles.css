@@ -665,10 +665,31 @@ li:nth-child(1) {
   grid-template-columns: 1fr 1fr;
 
 }
+#about h3{
+  display: block;
+  text-align: left;
+  padding-left: 1rem;
+}
 #about div{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap:1.6rem
 
 }
+#nums fieldset{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 1.6rem;
+  overflow: hidden; 
+  gap:.6rem;
 }
+#mySubmit{
+  display: grid;  
+  max-width: 40%;
+  margin-right: 0%; 
+  margin-left: 600px;
+  
+}
+  
+ }
+

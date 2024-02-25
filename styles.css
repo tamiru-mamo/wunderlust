@@ -578,18 +578,19 @@ footer a, footer p{
 }
 
 @media screen and (min-width: 650px){
-  header{
+  /* header{
     background: linear-gradient(var(--sea-blue), var(--white));
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-bottom: 2rem;   
-    max-width: 100%;
     border:2px solid red;
-}
+   
+} */
 #menu-toggle{
   background: linear-gradient(var(--sea-blue), var(--white));
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4,1fr) ;
+  width: 650px;
 }
 header h1{
   grid-column:span 2;
@@ -597,6 +598,7 @@ header h1{
   padding-right:4rem;
   order:0;
   font-size: 4.5rem;
+ 
 }
 
  header p{
@@ -610,24 +612,38 @@ header h1{
 #menu-toggle label{
   display: none;;
 }
-/* #menu-toggle{
+/* nav{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-columns: repeat(4,1fr) ;
+  background-color: var(--Black);
 } */
 #menu-toggle ul{
-  display: flex;
-  justify-content: space-between;
+  display: grid;  
+ grid-template-columns: 2fr 2fr 2fr 2fr ;
+margin-left: 3.6rem;
+ width: 650px;
 } 
 
 li  {
-  display: block;
+  display: inline;
   text-align: center;
   padding: 0.6rem;
+  margin: 0.6rem;
+  font-size: 1.25rem;
+  color: var(--Black);
+  text-transform: uppercase;
+  font-family: var(--fonts1);
   background-color: var(--White);
+  width: 650px;
 }
 li:nth-child(1) {
   background-color: var(--Yellow);
 }
+#menu-toggle ul li a{
+  font-size: 1.25rem;
+  color: var(--Black);
+ 
+} 
 #img-grid{
   /* display: grid;
   grid-template-columns: 1fr 1fr ; */

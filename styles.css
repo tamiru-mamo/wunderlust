@@ -663,7 +663,7 @@ footer a, footer p{
 } 
 #img-grid picture{
   display: grid; 
-  grid-column-end: 1fr;
+  
   margin-top: 10px;
 
 }
@@ -713,9 +713,30 @@ footer{
   flex-direction: row;
 }
  }
-}
- @media screen and (min-width: 1200px){
+
+ @media screen and (min-width: 1000px){
 
 
-
+  #plan div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+  }
+  #testimonials div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+  
+  }
+  form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap:20px;
+   
+  }
  }

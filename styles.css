@@ -152,12 +152,17 @@ q {
     padding-bottom: 2rem;
    
 }
+#logo{
+  padding-top: 2.5rem;
+}
 header h1{
   grid-column:span 2;
   padding-left:4rem;
   padding-right:4rem;
   order:2;
   font-size: 4.5rem;
+  padding-top: 2.5rem;
+  
 }
 
  header p{
@@ -261,7 +266,10 @@ li a {
     object-fit: cover;
 
 }
-
+#img-grid{
+  max-width: 385px;
+  /* margin: 1rem auto; */
+}
 
 /*---- Plan Your Trip Style ----*/
 
@@ -478,7 +486,7 @@ li a {
     height: 5rem;
     margin-left: 0%;
     accent-color:var(--Purple); 
-    box-shadow:  0 0 2px var(--Purple);  
+    border-radius: 50%; 
     float: left;    
 }
 
@@ -580,129 +588,70 @@ footer a, footer p{
 
 @media screen and (min-width: 650px){
   header{
-   
+    background: linear-gradient(var(--sea-blue),var(--White));
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-bottom: 2rem;  
-    position: absolute; 
-   
-   
+    position: relative;  
+    height:auto;    
 }
-#menu-toggle{
-  background: linear-gradient(var(--sea-blue), var(--white));
-  display: grid;
-  grid-template-columns: repeat(4,1fr) ;
-  width: 650px;
-}
-header h1{
-  grid-column:span 2;
-  padding-left:4rem;
-  padding-right:4rem;
-  order:0;
-  font-size: 4.5rem;
-  position: relative;
-  top: -90px;
-  left: 400px;
  
-}
-
- header p{
-  grid-column:span 2;
-  padding-left:4rem;
-  padding-right:4rem;
-  font-size: 2rem;
-  order:0;
-  position: relative;
-  top: -90px;
-  left: 300px;
-}
-
-#menu-toggle label{
-  display: none;;
-}
-/* nav{
-  display: grid;
-  grid-template-columns: repeat(4,1fr) ;
-  background-color: var(--Black);
-} */
-#menu-toggle ul{
-  display: grid;  
- grid-template-columns: 2fr 2fr 2fr 2fr ;
-margin-left: 3.6rem;
- width: 650px;
-} 
-
-li  {
-  display: inline;
-  text-align: center;
-  padding: 0.6rem;
-  margin: 0.6rem;
-  font-size: 1.25rem;
-  color: var(--Black);
-  text-transform: uppercase;
-  font-family: var(--fonts1);
-  background-color: var(--White);
-  width: 650px;
-}
-li:nth-child(1) {
-  background-color: var(--Yellow);
-}
-#menu-toggle ul li a{
-  font-size: 1.25rem;
-  color: var(--Black);
- 
-} 
-#img-grid{
-  /* display: grid;
-  grid-template-columns: 1fr 1fr ; */
-  max-width: 100%;
-  object-fit: cover;
-
-}
-#plan h3{
-  display: block;
-  text-align: left;
-  padding-left: 6rem;
-}
-#plan div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#testimonials div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
-#about h3{
-  display: block;
-  text-align: left;
-  padding-left: 1rem;
-}
-#about div{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap:1.6rem
-
-}
-#nums fieldset{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 1.6rem;
-  overflow: hidden; 
-  gap:.6rem;
-}
-#mySubmit{
-  display: grid;  
-  max-width: 60%;
-  margin-right: 0%; 
-  margin-left: 400px;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  header h1{
+    grid-column:span 2;
+    padding-left:4rem;
+    padding-right:4rem;
+    order:0;
+    font-size: 2rem;
+    position: absolute;
+    top: -8px;
+    left: 200px;   
+  }
   
-}
-footer{
+   header p{
+    grid-column:span 2;
+    padding-left:4rem;
+    padding-right:4rem;
+    font-size: 1rem;
+    order:0;
+    position: relative;
+    top: -50px;
+    left: 200px;
+   width: 100vw;
+  }
+  #menu-toggle label{
+    display: none;
+  
+  }
+  #menu-toggle{
+    background-color:transparent;
+  }
+  #menu-toggle ul{
   display: flex;
-  flex-direction: row;
+   width: 650px; 
+   justify-content:end;
+   margin-left: 100px;
+  }
+  #menu-toggle ul li{
+    display: inline; 
+    text-align: center;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;    
+  }
+  #menu-toggle ul li a{
+    text-transform: uppercase;
+    font-weight: bold;    
+  }
+  li:nth-child(1) {
+    background-color: var(--Yellow);
+    
 }
- }
 
+}
+ @media screen and (min-width: 1200px){
+
+
+
+ }

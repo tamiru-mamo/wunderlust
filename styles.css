@@ -234,6 +234,12 @@ li a {
   width: 100%;
   padding: 11px 0;
 }
+li:hover {
+  background-color: var(--Black);
+}
+li a:hover {
+ color: var(--White);
+}
 /*---- main-content Style----*/
 
 #intro{
@@ -649,31 +655,6 @@ footer a, footer p{
     
 }
 
- /* #img-grid img:nth-last-child(2n+1) {
-  display:grid; 
-  grid-template-columns: 1fr 1fr;
-  
-  
-} */
-/* #intro{
-  display: block;
-  
-} */
-/* #intro h2,#intro p{
-  display: block; 
-} */
-
- /* #img-grid {
-  display:grid;   
-  grid-template-columns: 1fr 1fr ;
-  gap:10px;   
-}  */
-/* #img-grid picture{
-  display: grid; 
-  
-  margin-top: 10px;
-
-} */
 #plan h3{
   display: block;
   text-align: left;
@@ -722,33 +703,40 @@ footer{
  }
 
  @media screen and (min-width: 1000px){
-
-
   #menu-toggle{
       display: grid;
       position: relative;
       order:1;
       top: -180px;
-      left: 500px;
-      
+      left: 500px;      
       overflow:hidden; 
 
     }
-
 header h1{ 
   top: 46px;
   left: 154px;  
 }
-
  header p{
   top: -8px;
   left: 154px; 
 }
- /* #img-grid {
-    display:flex; 
-    margin-bottom: 10px;  
-        
-  }  */
+#intro{
+  display:flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  border: 2px solid red;
+}
+
+
+#intro  p {
+  position: relative;
+  transform: translate(-200px,60px);
+  overflow:hidden; 
+}
+ /* #img-grid{
+  float: right;
+} */
   #plan div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

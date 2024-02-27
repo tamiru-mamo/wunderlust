@@ -648,7 +648,25 @@ footer a, footer p{
     background-color: var(--Yellow);
     
 }
+#intro{
+  display: block;
+  max-width: 650px;
+}
+#intro h2,#intro p{
+  display: block; 
+}
 
+ /* #intro #img-grid img{
+  display:inline-block;   
+   grid-template-columns: 1fr 1fr ;
+  gap:10px;   
+}  */
+#img-grid picture{
+  display: grid; 
+  grid-column-end: 1fr;
+  margin-top: 10px;
+
+}
 }
  @media screen and (min-width: 1200px){
 

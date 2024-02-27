@@ -656,17 +656,63 @@ footer a, footer p{
   display: block; 
 }
 
- /* #intro #img-grid img{
-  display:inline-block;   
+ #intro #img-grid {
+  display:grid;   
    grid-template-columns: 1fr 1fr ;
   gap:10px;   
-}  */
+} 
 #img-grid picture{
   display: grid; 
   grid-column-end: 1fr;
   margin-top: 10px;
 
 }
+#plan h3{
+  display: block;
+  text-align: left;
+  padding-left: 6rem;
+}
+#plan div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#testimonials div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+#about h3{
+  display: block;
+  text-align: left;
+  padding-left: 1rem;
+}
+#about div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1.6rem
+
+}
+#nums fieldset{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 1.6rem;
+  overflow: hidden; 
+  gap:.6rem;
+}
+#mySubmit{
+  display: grid;  
+  max-width: 60%;
+  margin-right: 0%; 
+  margin-left: 400px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  
+}
+footer{
+  display: flex;
+  flex-direction: row;
+}
+ }
 }
  @media screen and (min-width: 1200px){
 
